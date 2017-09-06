@@ -1,0 +1,53 @@
+select	a11.OPTY_ID  OPTY_ID,
+	max(a14.OPTY_DESC)  OPTY_DESC,
+	a11.ACCT_ID  ACCT_ID,
+	max(a15.ACCT_DESC)  ACCT_DESC,
+	a11.SALES_REP_ID  SALES_REP_ID,
+	max(a16.SALES_REP_NAME)  SALES_REP_NAME,
+	a14.OPTY_CLOSE_DATE  OPTY_CLOSE_DATE,
+	a14.PRIMARY_COMP_ID  PRIMARY_COMP_ID,
+	max(a17.COMPETITOR_NAME)  COMPETITOR_NAME,
+	sum(a11.OPTY_SIZE)  WJXBFS1
+from	F_OPTY_MNTH_HIST	a11
+	join	(select	pa11.ACCT_ID  ACCT_ID,
+		pa11.OPTY_ID  OPTY_ID,
+		pa11.SALES_REP_ID  SALES_REP_ID
+	from	(select	a11.ACCT_ID  ACCT_ID,
+			a11.OPTY_ID  OPTY_ID,
+			a11.SALES_REP_ID  SALES_REP_ID,
+			rank () over( order by sum(a11.OPTY_SIZE) desc)  WJXBFS1
+		from	F_OPTY_MNTH_HIST	a11
+			join	L_CAL_MNTH	a12
+			  on 	(a11.MNTH_ID = a12.MNTH_ID)
+		where	(a11.OPTY_STAT_ID in (5)
+		 and a12.QTR_ID in (20094))
+		group by	a11.ACCT_ID,
+			a11.OPTY_ID,
+			a11.SALES_REP_ID
+		)	pa11
+	where	(pa11.WJXBFS1 <=  10.0)
+	)	pa12
+	  on 	(a11.ACCT_ID = pa12.ACCT_ID and 
+	a11.OPTY_ID = pa12.OPTY_ID and 
+	a11.SALES_REP_ID = pa12.SALES_REP_ID)
+	join	L_CAL_MNTH	a13
+	  on 	(a11.MNTH_ID = a13.MNTH_ID)
+	join	L_OPTY	a14
+	  on 	(a11.OPTY_ID = a14.OPTY_ID)
+	join	L_ACCT	a15
+	  on 	(a11.ACCT_ID = a15.ACCT_ID)
+	join	L_SALES_REP	a16
+	  on 	(a11.SALES_REP_ID = a16.SALES_REP_ID)
+	join	L_COMPETITOR	a17
+	  on 	(a14.PRIMARY_COMP_ID = a17.COMPETITOR_ID)
+where	(a13.QTR_ID in (20094)
+ and a11.OPTY_STAT_ID in (5))
+group by	a11.OPTY_ID,
+	a11.ACCT_ID,
+	a11.SALES_REP_ID,
+	a14.OPTY_CLOSE_DATE,
+	a14.PRIMARY_COMP_ID
+
+[Analytical engine calculation steps:
+	1.  Perform cross-tabbing
+]

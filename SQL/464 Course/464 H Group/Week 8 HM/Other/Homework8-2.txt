@@ -1,0 +1,79 @@
+select	pa11.OPTY_STAT_ID  OPTY_STAT_ID,
+	max(a14.OPTY_STAT_DESC)  OPTY_STAT_DESC,
+	pa11.SALES_REP_ID  SALES_REP_ID,
+	max(a15.SALES_REP_NAME)  SALES_REP_NAME,
+	pa11.OPTY_ID  OPTY_ID,
+	max(a13.OPTY_DESC)  OPTY_DESC,
+	pa11.QTR_ID  QTR_ID,
+	max(a16.QTR_DESC)  QTR_DESC,
+	max(pa11.WJXBFS1)  WJXBFS1
+from	(select	a11.SALES_REP_ID  SALES_REP_ID,
+		a12.QTR_ID  QTR_ID,
+		a11.OPTY_STAT_ID  OPTY_STAT_ID,
+		a11.OPTY_ID  OPTY_ID,
+		a11.MNTH_ID  MNTH_ID,
+		sum(a11.OPTY_SIZE)  WJXBFS1
+	from	F_OPTY_MNTH_HIST	a11
+		join	L_CAL_MNTH	a12
+		  on 	(a11.MNTH_ID = a12.MNTH_ID)
+		join	L_SALES_REP	a13
+		  on 	(a11.SALES_REP_ID = a13.SALES_REP_ID)
+	where	(a13.SALES_DIST_ID in (3)
+	 and a12.QTR_ID in (20101))
+	group by	a11.SALES_REP_ID,
+		a12.QTR_ID,
+		a11.OPTY_STAT_ID,
+		a11.OPTY_ID,
+		a11.MNTH_ID
+	)	pa11
+	join	(select	pc11.SALES_REP_ID  SALES_REP_ID,
+		pc11.QTR_ID  QTR_ID,
+		pc11.OPTY_STAT_ID  OPTY_STAT_ID,
+		pc11.OPTY_ID  OPTY_ID,
+		max(pc11.MNTH_ID)  WJXBFS1
+	from	(select	a11.SALES_REP_ID  SALES_REP_ID,
+		a12.QTR_ID  QTR_ID,
+		a11.OPTY_STAT_ID  OPTY_STAT_ID,
+		a11.OPTY_ID  OPTY_ID,
+		a11.MNTH_ID  MNTH_ID,
+		sum(a11.OPTY_SIZE)  WJXBFS1
+	from	F_OPTY_MNTH_HIST	a11
+		join	L_CAL_MNTH	a12
+		  on 	(a11.MNTH_ID = a12.MNTH_ID)
+		join	L_SALES_REP	a13
+		  on 	(a11.SALES_REP_ID = a13.SALES_REP_ID)
+	where	(a13.SALES_DIST_ID in (3)
+	 and a12.QTR_ID in (20101))
+	group by	a11.SALES_REP_ID,
+		a12.QTR_ID,
+		a11.OPTY_STAT_ID,
+		a11.OPTY_ID,
+		a11.MNTH_ID
+	)	pc11
+	group by	pc11.SALES_REP_ID,
+		pc11.QTR_ID,
+		pc11.OPTY_STAT_ID,
+		pc11.OPTY_ID
+	)	pa12
+	  on 	(pa11.MNTH_ID = pa12.WJXBFS1 and 
+	pa11.OPTY_ID = pa12.OPTY_ID and 
+	pa11.OPTY_STAT_ID = pa12.OPTY_STAT_ID and 
+	pa11.QTR_ID = pa12.QTR_ID and 
+	pa11.SALES_REP_ID = pa12.SALES_REP_ID)
+	join	L_OPTY	a13
+	  on 	(pa11.OPTY_ID = a13.OPTY_ID)
+	join	L_OPTY_STATUS	a14
+	  on 	(pa11.OPTY_STAT_ID = a14.OPTY_STAT_ID)
+	join	L_SALES_REP	a15
+	  on 	(pa11.SALES_REP_ID = a15.SALES_REP_ID)
+	join	L_CAL_QTR	a16
+	  on 	(pa11.QTR_ID = a16.QTR_ID)
+group by	pa11.OPTY_STAT_ID,
+	pa11.SALES_REP_ID,
+	pa11.OPTY_ID,
+	pa11.QTR_ID
+
+[Analytical engine calculation steps:
+	1.  Evaluate thresholds
+	2.  Perform cross-tabbing
+]

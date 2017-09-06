@@ -1,0 +1,30 @@
+Assignment9
+
+2b)
+electricityprices2010_14 <- read.csv("C:/temp/electricityprices2010_14.csv")
+electricity_Min <- sqldf('select min(`cost`) from electricityprices2010_14 as "Min" ')
+view(electricity_Min)
+
+2d)
+electricityprices2010_14 <- read.csv("C:/temp/electricityprices2010_14.csv")
+Electricity_Median <- sqldf('select median(`cost`) from electricityprices2010_14 as "Median" ')
+view(electricity_Median)
+
+3b)
+wealth <- read.csv("C:/temp/wealth.csv")
+library(sqldf)
+wealthAvg <- sqldf('select avg(`GDP.per.capita`) from wealth as "AVG" ')
+View(wealthAvg)
+
+3d)
+
+wealth <- read.csv("C:/temp/wealth.csv")
+cor.test(wealth$GDP.per.capita,wealth$Wealth.per.captia)
+
+6b)
+
+
+CHAPTER 15
+
+2)
+12b)
