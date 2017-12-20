@@ -1,0 +1,3 @@
+comp.sys.ibm.pc.hardware
+It worked!!!
+Thank you very much!

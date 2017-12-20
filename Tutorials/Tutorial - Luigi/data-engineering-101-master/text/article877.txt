@@ -1,0 +1,5 @@
+comp.sys.ibm.pc.hardware
+
+
+I heard boot_b.zip could do exactly what you wanted without touching
+anything. Check it out with archie.

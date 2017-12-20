@@ -1,0 +1,2 @@
+comp.sys.ibm.pc.hardware
+Any comments of AMD microprocessors?  good?, bad?
