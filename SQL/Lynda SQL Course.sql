@@ -1,4 +1,4 @@
- # Select Statement 
+  # Select Statement 
 SELECT *  FROM Country:
 
 -- 
@@ -487,19 +487,241 @@ SELECT ROUND (2.55555, 3);
 SELECT ROUND (2.55555, 6);
 
 
-# Date and Times
-# All datebase times are in UTC
+# Date and Time Functions 
+-- All Time are in UTC
 
-# 
+SELECT DATETIME('now');
+
+--
+SELECT DATE('now');
+
+--
+SELECT TIME('now');
+
+--
+SELECT DATETIME('now', '+1 day');
+
+--
+SELECT DATETIME('now', '+3 days');
+
+--
+SELECT DATETIME('now', '-1 month');
+
+--
+SELECT DATETIME('now', '+3 hours','+27 minutes', '-1 day', '+3 years');
+
+#### Aggerate Datay
+
+# Aggerate Data
+SELECT COUNT(*) FROM Country;
+
+--
+SELECT Region, Count(*) FROM Country
+GROUP BY Region;
+
+--
+SELECT Region, Count(*) AS COUNT FROM Country
+GROUP BY Region
+ORDER BY Count DESC, Region;
+
+--
+SELECT 
+	a.title AS Album,
+	 COUNT(t.track_number) as Tracks
+FROM trakcs as t
+INNER JOIN album as a
+	ON a.id = t.ablum_id
+GROUP BY a.id
+ORDER BY Tracks DESC, Album	
+
+--
+SELECT 
+	a.title AS Album,
+	 COUNT(t.track_number) as Tracks
+FROM trakcs as t
+INNER JOIN album as a
+	ON a.id = t.ablum_id
+GROUP BY a.id
+HAVING Tracks >= 10
+ORDER BY Tracks DESC, Album	
+
+--
+SELECT 
+	a.title AS Album,
+	 COUNT(t.track_number) as Tracks
+FROM trakcs as t
+INNER JOIN album as a
+	ON a.id = t.ablum_id
+WHERE a.artist = 'The Beatles'
+GROUP BY a.id
+HAVING Tracks >= 10
+ORDER BY Tracks DESC, Album	
+
+--
+SELECT COUNT(*) FROM Country;
+
+--
+SELECT COUNT(Population) FROM Country; #!! Counts only Not null values
+
+-- 
+SELECT AVG(Population) FROM Country;
+
+--
+SELECT AVG(Population) FROM Country GROUP BY Region;
+
+--
+SELECT MIN(Population), MAX(Population) FROM Country GROUP BY Region;
+
+--
+SELECT SUM(Population) FROM Country GROUP BY Region;
+
+# Distinct Aggregation
+SELECT COUNT(HeadofState) FROM Country ORDER BY HeadofState;
+
+--
+SELECT COUNT(DISTINCT(HeadofState)) FROM Country ORDER BY HeadofState;
+
+#### Transactions 
+
+# Using Transactions
+BEGIN TRANSACTION;
+	INSERT INTO widegtSales(inv_id, quan, price) VALUES (1, 5, 500);
+	UPDATE widegtInventory SET onhand = (onhand - 5) WHERE id = 1;
+END TRANSACTION
+
+SELECT * FROM widegtInventory;
+SELECT * FROM widegtSales
+
+--
+BEGIN TRANSACTION;
+	INSERT INTO widegtInventory( description, onhand) VALUES ('toy', 25);
+ROLLBACK;
 
 
+SELECT * FROM widegtInventory;
+SELECT * FROM widegtSales
+
+--
+DROP TABLE widegtInventory;
+DROP TABLE widegtSales
 
 
+-- Using Transaction clauses for a shit ton of inserts are way faster
+
+#### Triggers
+
+# Understanding a table of triggers
+CREATE TRIGGER newWigetsSale AFTER INSERT ON widegtSales
+	BEGIN
+		UPDATE widegtCustomer SET last_order_id = NEW.id WHERE widegtCustomer.id = NEW.customer_id;
+	END;
 
 
+# Preventing automatic updates with a trigger
+CREATE TRIGGER updateWigetSale BEFORE UPDATE ON widegtSales;
+	BEGIN
+		SELECT RAISE(ROLLBACK, 'cannot update table "widegtSale"' FROM widegtSale
+			WHERE id = NEW.id AND reconciled = 1;
+	END
+;
 
 
+--
+BEGIN TRANSACTION;
+UPDATE widegtSale SET quan = 9 WHERE id = 2;
+END TRANSACTION;
+SELECT * FROM widegtSale;
 
+# Creating Timestamps via Trigger 
+CREATE TRIGGER stampSale AFTER INSERT on widegtSale;
+	BEGIN
+		UPDATE widegtSale SET stamp = DATETIME('now') WHERE id=NEW.id;
+		UPDATE widegtCustomer SET last_order_id = NEW.id, stamp = DATETIME('now')
+			WHERE widegtCustomer.id = NEW.customer_id;
+		INSERT INTO widegtLog (stamp, event, username, tablename, table_id)
+			VALUES (DATETIME('now'), 'INSERT','TRIGGER','widegtSale',NEW.id);
+	END
+ 
+#### Subselects and Views
+
+# A simple subselect
+SELECT 
+	SUBSTR(a, 1, 2) AS State, 
+	SUBSTR(a, 3) AS SCode,
+	SUBSTR(b, 1, 2) AS Country, 
+	SUBSTR(b, 3) AS CCode
+FROM t
+
+
+--
+SELECT co.Name, ss.CCode FROM(
+			(SELECT 
+				SUBSTR(a, 1, 2) AS State, 
+				SUBSTR(a, 3) AS SCode,
+				SUBSTR(b, 1, 2) AS Country, 
+				SUBSTR(b, 3) AS CCode
+			FROM t) AS ss
+	INNER JOIN Country AS co ON co.Code2 = ss.Country
+
+--
+DROP TABLE t;
+
+# Searching within a result set
+SELECT album_id FROM track WHERE duration <= 90;
+	SELECT DISTINCT album_id FROM track WHERE duration <= 90
+);
+
+--
+SELECT a.title AS album, a.artist, t.track_number AS Seq, t.title, t.duration AS secs
+	FROM album AS a
+	INNER JOIN as t
+		ON t.album_id = a.id
+	WHERE a.id IN (SELECT DISTINCT ablum_id FROM track WHERE duration <= 90)
+	ORDER BY a.title, t.track_number
+;
+
+# Creating a view
+SELECT id, ablum_id, title, track_number, duration / 60 AS m
+
+--
+CREATE VIEW trackView 
+SELECT id, ablum_id, title, track_number, duration / 60 AS m
+
+
+--
+SELECT a.title AS album, artist, t.track_number AS seq, t.title, t.m, t.s
+FROM album as a
+INNER JOIN trackView as t
+	ON t.album_id = a.id
+ORDER BY a.title, t.track_number
+;
+--
+DROP VIEW trackView;
+
+# Creating a joined view
+SELECT a.artist AS artist,
+	a.title as album,
+	t.title as track, 
+	t.track_number as trackno,
+	t.duration / 60 AS m,
+	t.duration  % 60 AS s
+FROM track as t
+	INNER JOIN album as a
+		ON a.id = t.album_id
+;
+SELECT * FROM joinedAlbum WHERE artist = 'Jimi Hendrix';
+
+
+--
+SELECT artist, album, track, trackno,
+	m|| ':' || CASE WHEN s < 10 THEN "0" || s ELSE s END AS duration
+	FROM joinedAlbum;
+
+--
+DROP VIEW joinedAlbum;
+
+#### CRUD Applications
+-- create, read, update, delete
 
 
 
