@@ -53,6 +53,24 @@ GROUP BY Continent WITH ROLLUP
 SELECT Continent, Region, SUM(Population) FROM country
 GROUP BY Continent, Region WITH ROLLUP
 
+# Limit Statement
+SELECT Continent, Region,  SUM(Population) FROM country
+GROUP BY Continent, Region
+ORDER BY Continent
+LIMIT 5; 
+
+# Limit Statement
+SELECT Continent, Region,  SUM(Population) FROM country
+GROUP BY Continent, Region
+ORDER BY Continent
+LIMIT 10; 
+
+#Setting a Value
+
+SET @admission_average = 76
+
+
+
 
 
 
