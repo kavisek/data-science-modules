@@ -246,7 +246,7 @@ WHERE Name LIKE '_a%' # Match by, anything as the first character, an 'a' as the
 --
 SELECT Name, Continent, Population
 FROM Country
-WHERE Continent IN {'Europe','Asia'} # IN Matches valuse in a list or sub selects
+WHERE Continent IN ('Europe','Asia') # IN Matches valuse in a list or sub selects
 ORDER BY Continent
 
 # Selecting Duplicates with SELECT DISTINCT
@@ -491,8 +491,7 @@ SELECT ROUND (2.55555, 6);
 -- All Time are in UTC
 
 SELECT DATETIME('now');
-
---
+s--
 SELECT DATE('now');
 
 --
