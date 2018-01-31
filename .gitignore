@@ -1,0 +1,4 @@
+# Ignore the Following Files
+.DS_Store
+*.csv
+*.zip
