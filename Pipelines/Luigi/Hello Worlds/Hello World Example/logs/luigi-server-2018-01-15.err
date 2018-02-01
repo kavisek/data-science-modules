@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/Kavi/anaconda/bin/luigid", line 11, in <module>
+    sys.exit(luigid())
+  File "/Users/Kavi/anaconda/lib/python3.6/site-packages/luigi/cmdline.py", line 38, in luigid
+    logdir=opts.logdir, unix_socket=opts.unix_socket)
+  File "/Users/Kavi/anaconda/lib/python3.6/site-packages/luigi/process.py", line 127, in daemonize
+    cmd(api_port=api_port, address=address, unix_socket=unix_socket)
+  File "/Users/Kavi/anaconda/lib/python3.6/site-packages/luigi/server.py", line 235, in run
+    unix_socket=unix_socket,
+  File "/Users/Kavi/anaconda/lib/python3.6/site-packages/luigi/server.py", line 213, in _init_api
+    api_sockets = tornado.netutil.bind_sockets(api_port, address=address)
+  File "/Users/Kavi/anaconda/lib/python3.6/site-packages/tornado/netutil.py", line 194, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 48] Address already in use
