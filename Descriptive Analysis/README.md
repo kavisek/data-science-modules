@@ -1,7 +1,7 @@
 
 ### Directory Information
 
-A catologue of discriptive analysis completed on publicly available data. All notebook data is imported from public links on dropbox, since github does not allowing hosting of data file above their 20mb file limit. 
+A catologue of discriptive analysis completed on publicly available data. All notebook data is imported from public links on dropbox, this is how I am getting around the 20mb csv file size limit on github. 
 
-I include the links to the data source as well.
+I will include link to the data sourec when possible.
 
