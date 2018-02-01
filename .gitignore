@@ -2,6 +2,11 @@
 .DS_Store
 *.csv
 *.zip
+*.pem
 
 # Hidden Folders
 Whitepapers
+Books
+Economics
+FlashCards
+
