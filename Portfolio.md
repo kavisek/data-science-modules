@@ -54,6 +54,14 @@
 
 ## SQL Queries
 
+* [Basic Queries]()
+* [Mathematical Queries]()
+* [Groupby Queries]()
+* [Joined Queries]()
+* [Export Query as CSV]() 
+* [Migrating Table from Seperate Database](https://github.com/kavisek/DataScience/blob/master/SQL/Useful%20Snippets/Copy%20Data%20from%20Table%20to%20Table.sql)
+* [SQL Useful Queries]()
+
 ## Study Material
 
 <br>I study via using dictations, therefore I have catologue all my dictactions in the [Tutorials Folder](https://github.com/kavisek/DataScience/tree/master/Tutorials) within the repo. Each dictation includes the original source of the material for referencing. 
