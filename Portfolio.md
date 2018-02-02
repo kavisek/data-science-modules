@@ -47,7 +47,7 @@
 * [Correlation Matrix](https://github.com/kavisek/DataScience/blob/master/Techniques/10-15-17%20Correlation%20Matrix.ipynb)
 * [Cross Validation](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20Cross%20Validation%20and%20K-Folds.ipynb)
 * [Greedy Search](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20%20Greedy%20Search.ipynb)
-* Randomized Greedy Search](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20%20Random%20Grid%20Search.ipynb)
+* [Randomized Greedy Search](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20%20Random%20Grid%20Search.ipynb)
 * [Rescaling Features](https://github.com/kavisek/DataScience/blob/master/Techniques/10-15-17%20Rescaling%20Features.ipynb)
 * [Train Test Split](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20%20Train-Test%20Split.ipynb)
 
