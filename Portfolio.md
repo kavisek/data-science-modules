@@ -1,5 +1,6 @@
 # Portfolio Overview
 
+I publish all my work everyday, completed or not. You can find all notebook and script work in my [Data Science Github Repo](https://github.com/kavisek/DataScience). If you are new to DataScience I would suggest taking a look a the "Tutorial" folder. This folder contains all my course notebook and dictated notebooks, created when I was researching useful Python Packages.
 
 ## Projects
 
