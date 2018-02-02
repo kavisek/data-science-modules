@@ -68,3 +68,21 @@ I publish all my work everyday, completed or not. You can find all notebook and 
 <br>I study via using dictations, therefore I have catologue all my dictactions in the [Tutorials Folder](https://github.com/kavisek/DataScience/tree/master/Tutorials) within the repo. Each dictation includes the original source of the material for referencing. 
 
 * [Python Packages](https://github.com/kavisek/DataScience/tree/master/Tutorials)
+
+## Course Refreencees
+
+If you would like to learn Data Science. I have completed the following courses, I would recommend them highly. 
+
+### Free Courses
+
+*
+*
+*
+*
+
+### Lynda Courses
+
+*
+*
+*
+*
