@@ -3,6 +3,9 @@
 *.csv
 *.zip
 *.pem
+*.txt
+*.xls
+*.json
 
 # Hidden Folders
 Whitepapers
