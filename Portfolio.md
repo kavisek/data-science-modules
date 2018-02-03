@@ -31,8 +31,8 @@ I publish all my work everyday, completed or not. You can find all notebook and 
 
 ## Data Pipeline
 
-* [Import Data via SQL Database]()
-* [Importing Data via Pandas]()
+* [Import Data via SQL Database](https://github.com/kavisek/DataScience/blob/master/Pipelines/01-13-17%20Import%20Data%20from%20RDS.ipynb)
+* [Importing Data via Pandas](https://github.com/kavisek/DataScience/blob/master/Pipelines/02-02-18%20Importing%20Data%20by%20CSV.ipynb)
 * [Import Zendesk Data]()
 
 
@@ -68,7 +68,7 @@ I publish all my work everyday, completed or not. You can find all notebook and 
 
 <br>I study via using dictations, therefore I have catologue all my dictactions in the [Tutorials Folder](https://github.com/kavisek/DataScience/tree/master/Tutorials) within the repo. Each dictation includes the original source of the material for referencing. 
 
-* [Python Packages](https://github.com/kavisek/DataScience/tree/master/Tutorials)
+* [Python Packages Tutorials](https://github.com/kavisek/DataScience/tree/master/Tutorials)
 
 ## Course Refreencees
 
@@ -76,14 +76,46 @@ If you would like to learn Data Science. I have completed the following courses,
 
 ### Free Courses
 
-*
-*
-*
-*
+* [Kaggle Learn](https://www.kaggle.com/learn/overview)
+* [Chris Albon's Tutorials](https://chrisalbon.com/)
+* [Fast AI](http://www.fast.ai/)
 
 ### Lynda Courses
 
-*
-*
-*
-*
+* [SQL Essential Training](https://www.lynda.com/SQL-tutorials/SQL-Essential-Training/139988-2.html?srchtrk=index%3a6%0alinktypeid%3a2%0aq%3aSQL%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
+* [Advanced SQL for Data Scientist](https://www.lynda.com/SQL-tutorials/Advanced-SQL-Data-Scientists/559183-2.html?srchtrk=index%3a2%0alinktypeid%3a2%0aq%3aSQL%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
+* [Git Essential Training](https://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html?srchtrk=index%3a2%0alinktypeid%3a2%0aq%3aGIT%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
+* [Planning an AWS Solution](https://www.lynda.com/Amazon-Web-Services-tutorials/Planning-AWS-Solution/628703-2.html?srchtrk=index%3a3%0alinktypeid%3a2%0aq%3aaws%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
+
+### Paid Resource
+
+* [All of Statistics: A Concise Course in Statistical Inference](https://www.amazon.ca/gp/product/0387402721/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1)
+* [Designing Data-Intensive Applications](https://www.amazon.ca/gp/product/1449373321/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
+* [Fluent Python](https://www.amazon.ca/gp/product/1491946008/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1)\
+* [Good Charts](https://www.amazon.ca/gp/product/1633690709/ref=oh_aui_detailpage_o07_s00?ie=UTF8&psc=1)
+* [Information is Beautiful](https://www.amazon.ca/gp/product/0007492898/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
+* [Knowledge is Beautiful](https://www.amazon.ca/gp/product/0007427921/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)
+* [Python for Data Science For Dummies](https://www.amazon.ca/gp/product/1118844181/ref=oh_aui_detailpage_o09_s00?ie=UTF8&psc=1)
+* [Data Science For Dummies](https://www.amazon.ca/gp/product/1118841557/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
+* [SQL For Dummies](https://www.amazon.ca/gp/product/1118607961/ref=oh_aui_detailpage_o06_s00?ie=UTF8&psc=1)
+* []()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
