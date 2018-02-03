@@ -23,8 +23,9 @@ I publish all my work everyday, completed or not. You can find all notebook and 
 
 ## Visualizations
 
-* [Barplots]()
-* [Histograms]()
+* [Barplots](https://github.com/kavisek/DataScience/blob/master/Visualizations/02-02-15%20Barplots.ipynb)
+* [Histograms](https://github.com/kavisek/DataScience/blob/master/Visualizations/08-05-17%20Histograms.ipynb)
+* [Heatmap](https://github.com/kavisek/DataScience/blob/master/Visualizations/12-04-17%20Seaborn%20Heatmap.ipynb)
 * [Plotting Residuals](https://github.com/kavisek/DataScience/blob/master/Techniques/10-15-17%20Plotting%20Residuals.ipynb)
 
 
