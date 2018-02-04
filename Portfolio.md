@@ -38,8 +38,8 @@ I publish all my work everyday, completed or not. You can find all notebook and 
 
 ## Cleaning Data / Data Wrangling
 
-* [Resample Data]()
-* [Group by Aggeration]()
+* [Resample Data](https://github.com/kavisek/DataScience/blob/master/Techniques/02-02-18%20Resampling%20Data.ipynb)
+* [Group by Aggeration](https://github.com/kavisek/DataScience/blob/master/Techniques/02-02-19%20Group%20by%20Aggregations.ipynb)
 * [Anonmozie Data](https://github.com/kavisek/DataScience/blob/master/Techniques/09-27-17%20How%20to%20Anonymize%20Data.ipynb)
 
 
