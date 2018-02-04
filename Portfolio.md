@@ -29,11 +29,10 @@ I publish all my work everyday, completed or not. You can find all notebook and 
 * [Plotting Residuals](https://github.com/kavisek/DataScience/blob/master/Techniques/10-15-17%20Plotting%20Residuals.ipynb)
 
 
-## Data Pipeline
+## Data Pipelines
 
 * [Import Data via SQL Database](https://github.com/kavisek/DataScience/blob/master/Pipelines/01-13-17%20Import%20Data%20from%20RDS.ipynb)
 * [Importing Data via Pandas](https://github.com/kavisek/DataScience/blob/master/Pipelines/02-02-18%20Importing%20Data%20by%20CSV.ipynb)
-* [Import Zendesk Data]()
 
 
 ## Cleaning Data / Data Wrangling
@@ -70,7 +69,7 @@ I publish all my work everyday, completed or not. You can find all notebook and 
 
 * [Python Packages Tutorials](https://github.com/kavisek/DataScience/tree/master/Tutorials)
 
-## Course Refreencees
+## Resources for Learning
 
 If you would like to learn Data Science. I have completed the following courses, I would recommend them highly. 
 
@@ -87,7 +86,7 @@ If you would like to learn Data Science. I have completed the following courses,
 * [Git Essential Training](https://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html?srchtrk=index%3a2%0alinktypeid%3a2%0aq%3aGIT%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
 * [Planning an AWS Solution](https://www.lynda.com/Amazon-Web-Services-tutorials/Planning-AWS-Solution/628703-2.html?srchtrk=index%3a3%0alinktypeid%3a2%0aq%3aaws%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
 
-### Paid Resource
+### Books
 
 * [All of Statistics: A Concise Course in Statistical Inference](https://www.amazon.ca/gp/product/0387402721/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1)
 * [Designing Data-Intensive Applications](https://www.amazon.ca/gp/product/1449373321/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
@@ -98,7 +97,6 @@ If you would like to learn Data Science. I have completed the following courses,
 * [Python for Data Science For Dummies](https://www.amazon.ca/gp/product/1118844181/ref=oh_aui_detailpage_o09_s00?ie=UTF8&psc=1)
 * [Data Science For Dummies](https://www.amazon.ca/gp/product/1118841557/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
 * [SQL For Dummies](https://www.amazon.ca/gp/product/1118607961/ref=oh_aui_detailpage_o06_s00?ie=UTF8&psc=1)
-* []()
 
 
 
