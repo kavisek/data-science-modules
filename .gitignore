@@ -7,6 +7,8 @@
 *.xls
 *.json
 *.jpg
+*.png
+*.jpeg
 
 # Hidden Folders
 Whitepapers
