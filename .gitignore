@@ -9,6 +9,7 @@
 *.jpg
 *.png
 *.jpeg
+*.h5
 
 # Hidden Folders
 Whitepapers
