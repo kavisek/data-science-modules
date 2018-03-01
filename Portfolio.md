@@ -8,8 +8,8 @@ I publish all my work everyday, completed or not. You can find all notebook and 
 
 ## Competitions
 
-* [Recruit Restaurant Visitor Forecasting](https://github.com/kavisek/DataScience/tree/master/Competitions/Recruit%20Restaurant%20Visitor%20Forecasting)
-* [San Fransisco Crime Classification Data](https://github.com/kavisek/DataScience/tree/master/Competitions/San%20Francisco%20Crime%20Classification)
+* [Titanic: Machine Learning from Disaster](https://github.com/kavisek/DataScience/tree/master/Competitions/Titanic%20Competition)
+
 
 ## Descriptive Analysis
 
