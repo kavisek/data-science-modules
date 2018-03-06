@@ -9,6 +9,7 @@ I publish all my work everyday, completed or not. You can find all notebook and 
 ## Competitions
 
 * [Titanic: Machine Learning from Disaster](https://github.com/kavisek/DataScience/tree/master/Competitions/Titanic%20Competition)
+* [House Prices: Advanced Regression Techniques](https://github.com/kavisek/DataScience/tree/master/Competitions/Price%20Competition)
 
 
 ## Descriptive Analysis
