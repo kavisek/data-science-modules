@@ -82,21 +82,28 @@ If you would like to learn Data Science. I have completed the following courses,
 
 ### Lynda Courses
 
-* [SQL Essential Training](https://www.lynda.com/SQL-tutorials/SQL-Essential-Training/139988-2.html?srchtrk=index%3a6%0alinktypeid%3a2%0aq%3aSQL%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
-* [Advanced SQL for Data Scientist](https://www.lynda.com/SQL-tutorials/Advanced-SQL-Data-Scientists/559183-2.html?srchtrk=index%3a2%0alinktypeid%3a2%0aq%3aSQL%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
-* [Git Essential Training](https://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html?srchtrk=index%3a2%0alinktypeid%3a2%0aq%3aGIT%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
-* [Planning an AWS Solution](https://www.lynda.com/Amazon-Web-Services-tutorials/Planning-AWS-Solution/628703-2.html?srchtrk=index%3a3%0alinktypeid%3a2%0aq%3aaws%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
+* [Advanced SQL for Data Scientists](https://www.lynda.com/SQL-tutorials/Advanced-SQL-Data-Scientists/559183-2.html)
+* [Git Essential Training](https://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html)
+* [R Statistics Essential Training](https://www.linkedin.com/learning/r-statistics-essential-training?originalSubdomain=ca)
+* [Data Visualization for Data Analysts](https://www.lynda.com/Data-Visualization-tutorials/7265-0.html)
+* [Learning NoSQL Databases](https://www.lynda.com/NoSQL-tutorials/Up-Running-NoSQL-Databases/111598-2.html)
+* [SQL Tips, Tricks, & Techniques](https://www.lynda.com/SQL-tutorials/SQL-Tips-Tricks-Data-Science/558576-2.html)
+* [SQL: Data Reporting and Analysis](https://www.lynda.com/SQL-tutorials/Welcome/529631/551694-4.html)
+* [Google Analytics Essential Training](https://www.lynda.com/Google-Analytics-tutorials/Google-Analytics-Essential-Training/574707-2.html)
+* [Planning an AWS Solution](https://www.lynda.com/Amazon-Web-Services-tutorials/Planning-AWS-Solution/628703-2.html)
+* [SQL Essential Training](https://www.lynda.com/SQL-tutorials/SQL-Essential-Training/139988-2.html)
+* [Learning Cloud Computing](https://www.lynda.com/Cloud-Computing-tutorials/Cloud-Computing-Cloud-DevOps/532185-2.html)
 
 ### Books
 
 Self Study list of Data Science books that I have completed. Please have a look, hopefully you find some of the literature interesting. My recommendation would be "Signal and the  Noise" by Nate Silver.
 
 * [Deep Learning with Python by Francois Chollet](https://www.amazon.ca/Deep-Learning-Python-Francois-Chollet/dp/1617294438/ref=sr_1_2/136-2836014-3216124?ie=UTF8&qid=1521815274&sr=8-2&keywords=deep+learning+python)
-* [Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://www.amazon.ca/gp/product/1449373321/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
-* [All of Statistics: A Concise Course in Statistical Inference by Larry Wasserman](https://www.amazon.ca/gp/product/0387402721/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1)
-* [Fluent Python: Clear, Concise, and Effective by Luciano Ramalho](https://www.amazon.ca/Fluent-Python-Concise-Effective-Programming/dp/1491946008/ref=sr_1_fkmr0_1?ie=UTF8&qid=1522070215&sr=8-1-fkmr0&keywords=fluent+in+python+by+Luciano)
-* [Information Is Beautiful (New Edition) by David McCandless](https://www.amazon.ca/gp/product/0007492898/ref=oh_aui_detailpage_o08_s00?ie=UTF8&psc=1)
-* [Good Charts: The HBR Guide to Making Smarter, More Persuasive Data Visualizations by Scott Berinato](https://www.amazon.ca/gp/product/1633690709/ref=oh_aui_detailpage_o07_s00?ie=UTF8&psc=1)
+* [Designing Data-Intensive Applications](https://www.amazon.ca/gp/product/1449373321/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
+* [All of Statistics by Larry Wasserman](https://www.amazon.ca/gp/product/0387402721/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1)
+* [Fluent Python by Luciano Ramalho](https://www.amazon.ca/Fluent-Python-Concise-Effective-Programming/dp/1491946008/ref=sr_1_fkmr0_1?ie=UTF8&qid=1522070215&sr=8-1-fkmr0&keywords=fluent+in+python+by+Luciano)
+* [Information Is Beautiful by David McCandless](https://www.amazon.ca/gp/product/0007492898/ref=oh_aui_detailpage_o08_s00?ie=UTF8&psc=1)
+* [Good Charts by Scott Berinato](https://www.amazon.ca/gp/product/1633690709/ref=oh_aui_detailpage_o07_s00?ie=UTF8&psc=1)
 * [Knowledge is Beautiful by Davi McCandless](https://www.amazon.ca/gp/product/0007427921/ref=oh_aui_detailpage_o09_s00?ie=UTF8&psc=1)
 * [Data Sceince for Dummies by Lillian Pierson](https://www.amazon.ca/Data-Science-Dummies-Lillian-Pierson/dp/1118841557/ref=sr_1_3?s=books&ie=UTF8&qid=1522070231&sr=1-3&keywords=Data+Science+for+Dummies&dpID=51MXppBef9L&preST=_SX198_BO1,204,203,200_QL40_&dpSrc=srch)
 * [Python for Data Science by John Paul Mueller and Luca Massaron](https://www.amazon.ca/Python-Data-Science-Dummies-Mueller/dp/1118844181/ref=sr_1_2?s=books&ie=UTF8&qid=1522070268&sr=1-2&keywords=Python+for+Data+Science)
