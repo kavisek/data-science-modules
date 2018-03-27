@@ -4,12 +4,13 @@ I publish all my work everyday, completed or not. You can find all notebook and 
 
 ## Projects
 
-
+Work is currently in progess
 
 ## Competitions
 
 * [Titanic: Machine Learning from Disaster](https://github.com/kavisek/DataScience/tree/master/Competitions/Titanic%20Competition)
 * [House Prices: Advanced Regression Techniques](https://github.com/kavisek/DataScience/tree/master/Competitions/Price%20Competition)
+* [Fraud Detections - WIP](https://github.com/kavisek/DataScience/tree/master/Competitions/Fraud%20Competition)
 
 
 ## Descriptive Analysis
@@ -38,8 +39,9 @@ I publish all my work everyday, completed or not. You can find all notebook and 
 
 ## Cleaning Data / Data Wrangling
 
+* [Handling Missing Data](https://github.com/kavisek/DataScience/blob/master/Techniques/10-02-17%20Handling%20Missing%20Data.ipynb)
 * [Resample Data](https://github.com/kavisek/DataScience/blob/master/Techniques/02-02-18%20Resampling%20Data.ipynb)
-* [Group by Aggeration](https://github.com/kavisek/DataScience/blob/master/Techniques/02-02-19%20Group%20by%20Aggregations.ipynb)
+* [Group by Aggeration](https://github.com/kavisek/DataScience/blob/master/Guides/02-02-19%20Group%20by%20Aggregations.ipynb)
 * [Anonmozie Data](https://github.com/kavisek/DataScience/blob/master/Techniques/09-27-17%20How%20to%20Anonymize%20Data.ipynb)
 
 
@@ -47,11 +49,12 @@ I publish all my work everyday, completed or not. You can find all notebook and 
 
 * [Pivot Table](https://github.com/kavisek/DataScience/blob/master/Techniques/11-07-19%20Crosstab%20Table.ipynb)
 * [Correlation Matrix](https://github.com/kavisek/DataScience/blob/master/Techniques/10-15-17%20Correlation%20Matrix.ipynb)
-* [Cross Validation](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20Cross%20Validation%20and%20K-Folds.ipynb)
-* [Greedy Search](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20%20Greedy%20Search.ipynb)
-* [Randomized Greedy Search](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20%20Random%20Grid%20Search.ipynb)
-* [Rescaling Features](https://github.com/kavisek/DataScience/blob/master/Techniques/10-15-17%20Rescaling%20Features.ipynb)
-* [Train Test Split](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20%20Train-Test%20Split.ipynb)
+* [Train Test Split](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20Train-Test%20Split.ipynb)
+* [Cross Validation and K-Fold Cross Validation](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20Cross%20Validation%20and%20K-Folds.ipynb)
+* [Greedy Search](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20Full%20Grid%20Search.ipynb)
+* [Randomized Greedy Search](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20Random%20Grid%20Search.ipynb)
+* [Rescaling Features](https://github.com/kavisek/DataScience/blob/master/Guides/10-15-17%20Rescaling%20Features.ipynb)
+
 
 
 ## SQL Queries
