@@ -66,7 +66,7 @@ I publish all my work everyday, completed or not. You can find all notebook and 
 
 ## Study Material
 
-<br>I study via using dictations, therefore I have catologue all my dictactions in the [Tutorials Folder](https://github.com/kavisek/DataScience/tree/master/Tutorials) within the repo. Each dictation includes the original source of the material for referencing. 
+<br>I  believe dictating code when going threw coures help build muscle memory. Therefore I have catologue all my dictactions sessions in the [Tutorials Folder](https://github.com/kavisek/DataScience/tree/master/Tutorials) on my Data Science repo. Each dictation includes the original source of the material for referencing. 
 
 * [Python Packages Tutorials](https://github.com/kavisek/DataScience/tree/master/Tutorials)
 
