@@ -63,7 +63,7 @@ Work is currently in progess
 * [Recursive Feature Elimination](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20Recursive%20Feature%20Elimination.ipynb)
 
 
-** Basic Models
+## Basic Models
 
 * [Naive Bayes Ridge Regressor](https://github.com/kavisek/DataScience/blob/master/Predictive%20Analysis/Naive%20Bayes%20Ridge%20Regressor.ipynb)
 * [Decision Tree Regressor](https://github.com/kavisek/DataScience/blob/master/Predictive%20Analysis/Decision%20Tree%20Regressor.ipynb)
