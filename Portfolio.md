@@ -52,14 +52,20 @@ Work is currently in progess
 * [Correlation Matrix](https://github.com/kavisek/DataScience/blob/master/Techniques/10-15-17%20Correlation%20Matrix.ipynb)
 * [Train Test Split](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20Train-Test%20Split.ipynb)
 * [Cross Validation and K-Fold Cross Validation](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20Cross%20Validation%20and%20K-Folds.ipynb)
-* [Greedy Search](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20Full%20Grid%20Search.ipynb)
+* [Greedy Grid Search](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20Full%20Grid%20Search.ipynb)
 * [Randomized Greedy Search](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20Random%20Grid%20Search.ipynb)
 * [Rescaling Features](https://github.com/kavisek/DataScience/blob/master/Guides/10-15-17%20Rescaling%20Features.ipynb)
 * [Creating Dummy Variables](https://github.com/kavisek/DataScience/blob/master/Techniques/03-28-18%20Dummy%20Variables.ipynb)
 * [Label Encoding](https://github.com/kavisek/DataScience/blob/master/Techniques/11-08-17%20Label%20Encoding.ipynb)
 * [Standardization](https://github.com/kavisek/DataScience/blob/master/Techniques/03-28-18%20Standardization.ipynb)
+* [Principal Component Analysis](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20Factor%20Analysis%20and%20PCA.ipynb)
+* [Factor Analysis](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20Factor%20Analysis%20and%20PCA.ipynb)
+* [Recursive Feature Elimination](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20Recursive%20Feature%20Elimination.ipynb)
 
 
+## Prediction Model Types
+
+* 
 
 
 ## SQL Queries
