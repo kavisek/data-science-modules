@@ -42,7 +42,8 @@ Work is currently in progess
 * [Handling Missing Data](https://github.com/kavisek/DataScience/blob/master/Techniques/10-02-17%20Handling%20Missing%20Data.ipynb)
 * [Resample Data](https://github.com/kavisek/DataScience/blob/master/Techniques/02-02-18%20Resampling%20Data.ipynb)
 * [Group by Aggeration](https://github.com/kavisek/DataScience/blob/master/Guides/02-02-19%20Group%20by%20Aggregations.ipynb)
-* [Anonmozie Data](https://github.com/kavisek/DataScience/blob/master/Techniques/09-27-17%20How%20to%20Anonymize%20Data.ipynb)
+* [Anonmozie Data](https://github.com/kavisek/DataSc\ience/blob/master/Techniques/09-27-17%20How%20to%20Anonymize%20Data.ipynb)
+* [Removing Outliers](https://github.com/kavisek/DataScience/blob/master/Techniques/03-08-18%20Removing%20Outliers.ipynb)
 
 
 ## Techniques
@@ -54,6 +55,10 @@ Work is currently in progess
 * [Greedy Search](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20Full%20Grid%20Search.ipynb)
 * [Randomized Greedy Search](https://github.com/kavisek/DataScience/blob/master/Techniques/08-01-17%20Random%20Grid%20Search.ipynb)
 * [Rescaling Features](https://github.com/kavisek/DataScience/blob/master/Guides/10-15-17%20Rescaling%20Features.ipynb)
+* [Creating Dummy Variables](https://github.com/kavisek/DataScience/blob/master/Techniques/03-28-18%20Dummy%20Variables.ipynb)
+* [Label Encoding](https://github.com/kavisek/DataScience/blob/master/Techniques/11-08-17%20Label%20Encoding.ipynb)
+* [Standardization](https://github.com/kavisek/DataScience/blob/master/Techniques/03-28-18%20Standardization.ipynb)
+
 
 
 
