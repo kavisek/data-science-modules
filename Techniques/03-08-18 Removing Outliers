@@ -4,7 +4,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "# <center> Removing Outliers by Quantile\n",
+    "# <center> Removing Outliers\n",
     "### Import Preliminaries"
    ]
   },
@@ -115,7 +115,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "### Remove Outliers"
+    "### Remove Outliers by Quantile"
    ]
   },
   {
@@ -223,13 +223,6 @@
     "# View the dataframe\n",
     "df"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
   }
  ],
  "metadata": {
