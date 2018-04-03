@@ -74,13 +74,19 @@ Work is currently in progess
 
 ## SQL Queries
 
-* [Basic Queries]()
-* [Mathematical Queries]()
-* [Groupby Queries]()
-* [Joined Queries]()
-* [Export Query as CSV]() 
+* [Query Examples](https://github.com/kavisek/DataScience/blob/master/SQL/World%20Database%20Practise.sql)
+* [Math Query](https://github.com/kavisek/DataScience/blob/master/SQL/Useful%20Snippets/Mathematical%20Operations%20on%20Select%20Statments.sql)
+* [Group By Query](https://github.com/kavisek/DataScience/blob/master/SQL/Useful%20Snippets/Group%20By.sql)
+* [Order By Query](https://github.com/kavisek/DataScience/blob/master/SQL/Useful%20Snippets/Order%20By.sql)
+* [Limit Query](https://github.com/kavisek/DataScience/blob/master/SQL/Useful%20Snippets/Limits.sql)
+* [Rollup Query](https://github.com/kavisek/DataScience/blob/master/SQL/Roll%20Up%20Example.sql)
+* [Copy Data from Table](https://github.com/kavisek/DataScience/blob/master/SQL/Useful%20Snippets/Copy%20Data%20from%20Table%20to%20Table.sql)
+* [Export to CSV Query](https://github.com/kavisek/DataScience/blob/master/SQL/Useful%20Snippets/Export%20as%20CSV.sql)
+* [Export to Text Query](https://github.com/kavisek/DataScience/blob/master/SQL/Useful%20Snippets/Export%20as%20Text.sql)
 * [Migrating Table from Seperate Database](https://github.com/kavisek/DataScience/blob/master/SQL/Useful%20Snippets/Copy%20Data%20from%20Table%20to%20Table.sql)
-* [SQL Useful Queries]()
+* [SQL For DataScience](https://github.com/kavisek/DataScience/blob/master/SQL/SQL%20For%20Data%20Science%20Queries.sql)
+* [SQL For Data Reporting and Analysis](https://github.com/kavisek/DataScience/blob/master/SQL/SQL-%20Data%20Reporting%20and%20Analysis.sql)
+* [Lynda SQL Queries](https://github.com/kavisek/DataScience/blob/master/SQL/Lynda%20SQL%20Course.sql)
 
 ## Study Material
 
