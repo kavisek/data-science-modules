@@ -71,6 +71,10 @@ Work is currently in progess
 * [GaussiaNB Classifier](https://github.com/kavisek/DataScience/blob/master/Predictive%20Analysis/Naive%20Bayes%20Classifier.ipynb)
 * [Decision Tree Classifier](https://github.com/kavisek/DataScience/blob/master/Predictive%20Analysis/Decision%20Tree%20Classifier.ipynb)
 * [Random Forest Classifier](https://github.com/kavisek/DataScience/blob/master/Predictive%20Analysis/Random%20Forest%20Classifier.ipynb)
+* [Convolutional Neural Network - Binary Classifier](https://github.com/kavisek/DataScience/blob/master/Predictive%20Analysis/Convolutional%20Neural%20Network%20-%20Binary%20Classification.ipynb)
+* [Convolutional Neural Network - Multiclass Classifier](https://github.com/kavisek/DataScience/blob/master/Predictive%20Analysis/Convolutional%20Neural%20Network%20-%20MultiClass%20Classification.ipynb)
+* [Convolutional Neural Network - Regressor](https://github.com/kavisek/DataScience/blob/master/Predictive%20Analysis/Convolutional%20Neural%20Network%20-%20Regression.ipynb)
+* [Convolutional Neural Network - REgressor + KFOLD](https://github.com/kavisek/DataScience/blob/master/Predictive%20Analysis/Convolutional%20Neural%20Network%20-%20Regression%20%3D%20KFold.ipynb)
 
 ## SQL Queries
 
