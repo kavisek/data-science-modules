@@ -10,7 +10,6 @@ Work is currently in progess
 
 * [Titanic: Machine Learning from Disaster](https://github.com/kavisek/DataScience/tree/master/Competitions/Titanic%20Competition)
 * [House Prices: Advanced Regression Techniques](https://github.com/kavisek/DataScience/tree/master/Competitions/Price%20Competition)
-* [Fraud Detections - WIP](https://github.com/kavisek/DataScience/tree/master/Competitions/Fraud%20Competition)
 
 
 ## Descriptive Analysis
