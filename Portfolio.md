@@ -86,7 +86,7 @@ Work is currently in progess
 * [Migrating Table from Seperate Database](https://github.com/kavisek/DataScience/blob/master/SQL/Useful%20Snippets/Copy%20Data%20from%20Table%20to%20Table.sql)
 * [SQL For DataScience](https://github.com/kavisek/DataScience/blob/master/SQL/SQL%20For%20Data%20Science%20Queries.sql)
 * [SQL For Data Reporting and Analysis](https://github.com/kavisek/DataScience/blob/master/SQL/SQL-%20Data%20Reporting%20and%20Analysis.sql)
-* [Lynda SQL Queries](https://github.com/kavisek/DataScience/blob/master/SQL/Lynda%20SQL%20Course.sql)
+* [Lynda SQL Queries](https://github.com/kavisek/DataScience/blob/master/SQL/Lynda%20SQL%20Course.sql t)
 
 ## Study Material
 
