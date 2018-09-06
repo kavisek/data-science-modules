@@ -1,0 +1,15 @@
+data(iris)
+data(iris)
+iris[1:5, ]
+install.packages("scatterplot3d")
+require("scatterplot3d")
+require("rgl")
+require("RColorBrewer")
+plot3d(iris$Petal.Length,  # x variable#
+       iris$Petal.Width,    # y variable#
+       iris$Sepal.Length,  # z variable#
+       xlab = "Petal.Length",#
+       ylab = "Petal.Width",#
+       zlab = "Sepal.Length",#
+       col = brewer.pal(3, "Pastel1")[unclass(iris$Species)],#
+       size = 3)

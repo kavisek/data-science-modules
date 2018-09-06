@@ -1,0 +1,21 @@
+--2018-03-22 19:11:03--  https://s3.amazonaws.com/keras-datasets/jena_climate_2009_2016.csv.zip
+Resolving s3.amazonaws.com... 52.216.86.13
+Connecting to s3.amazonaws.com|52.216.86.13|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 13568290 (13M) [application/zip]
+Saving to: 'jena_climate_2009_2016.csv.zip'
+
+6.csv.zip            38%[======>             ]   4.99M   687 B/s    eta 22m 59s.csv.zip             38%[======>             ]   5.00M   790 B/s    eta 22m 59sjena_climate_2009_2  38%[======>             ]   5.00M   790 B/s    in 14m 25s 
+
+2018-03-22 19:57:17 (5.91 KB/s) - Read error at byte 5239439/13568290 (Success). Retrying.
+
+--2018-03-22 19:57:18--  (try: 2)  https://s3.amazonaws.com/keras-datasets/jena_climate_2009_2016.csv.zip
+Connecting to s3.amazonaws.com|52.216.86.13|:443... failed: Network is unreachable.
+Resolving s3.amazonaws.com... failed: nodename nor servname provided, or not known.
+wget: unable to resolve host address 's3.amazonaws.com'
+--2018-03-22 19:57:18--  http://unzip/
+Resolving unzip... failed: nodename nor servname provided, or not known.
+wget: unable to resolve host address 'unzip'
+--2018-03-22 19:57:18--  http://jena_climate_2009_2016.csv.zip/
+Resolving jena_climate_2009_2016.csv.zip... failed: nodename nor servname provided, or not known.
+wget: unable to resolve host address 'jena_climate_2009_2016.csv.zip'

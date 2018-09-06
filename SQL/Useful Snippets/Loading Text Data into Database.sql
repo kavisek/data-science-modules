@@ -1,0 +1,5 @@
+LOAD DATA LOCAL INFILE 
+'/Users/rtw/desktop/share.txt'   INTO TABLE SHARE 
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY "'" 
+LINES TERMINATED BY '\r’

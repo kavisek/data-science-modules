@@ -1,0 +1,2 @@
+2018-01-15 15:38:13,429 luigi-interface[6380] INFO: Loaded []
+2018-01-15 15:38:13,433 luigi.scheduler[6380] INFO: No prior state file exists at /var/lib/luigi-server/state.pickle. Starting with empty state
