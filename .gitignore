@@ -10,6 +10,9 @@
 *.png
 *.jpeg
 *.h5
+*.data
+*.data.gz
+*.gz
 
 # Hidden Folders
 Whitepapers
@@ -18,4 +21,3 @@ Economics
 FlashCards
 BrainStation
 Kaggle
-
