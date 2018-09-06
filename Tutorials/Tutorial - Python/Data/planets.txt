@@ -1,4 +1,0 @@
-Mercury
-Venus
-Earth
-Mars
