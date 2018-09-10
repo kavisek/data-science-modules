@@ -1,6 +1,7 @@
 # Ignore the Following Files
 .DS_Store
 *.csv
+*.csv.gz
 *.zip
 *.pem
 *.txt
