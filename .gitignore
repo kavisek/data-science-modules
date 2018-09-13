@@ -15,6 +15,7 @@
 *.data.gz
 *.gz
 *.sav
+*.zip
 
 # Hidden Folders
 Whitepapers
@@ -23,3 +24,4 @@ Economics
 FlashCards
 BrainStation
 Kaggle
+Backups
