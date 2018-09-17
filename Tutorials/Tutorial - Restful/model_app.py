@@ -2,15 +2,16 @@
 
 """Alternative version of the ToDo RESTful server implemented using the
 Flask-RESTful extension."""
-
+import numpy as np
 from flask import Flask, jsonify, abort, make_response
 from flask_restful import Api, Resource, reqparse, fields, marshal
 from flask_httpauth import HTTPBasicAuth
+from sklearn.datasets import load_iris
+from sklearn.externals import joblib
 
 app = Flask(__name__, static_url_path="")
 api = Api(app)
 auth = HTTPBasicAuth()
-
 
 # Adding Username and Password Authentication
 
@@ -31,46 +32,72 @@ def unauthorized():
     return make_response(jsonify({'message': 'Unauthorized access'}), 403)
 
 
+# Models Import
+loaded_model = joblib.load('Models/lr_model.sav')
+
+# Select Random Training Point
+iris = load_iris()
+X, y = iris.data, iris.target
+
+# Select a real datapoint
+random_datapoint = [X[np.random.randint(X.shape[0])]]
+print(random_datapoint)
+
+
 # Default JSON data
 tasks = [
     {
         'id': 1,
-        'title': u'Buy groceries',
-        'description': u'Milk, Cheese, Pizza, Fruit, Tylenol',
-        'done': False
+        'sepal length (cm)': 6,
+        'sepal width (cm)': 2.2,
+        'petal length (cm)': 4,
+        'petal width (cm)': 1,
+        'target': 1,
     },
     {
         'id': 2,
-        'title': u'Learn Python',
-        'description': u'Need to find a good Python tutorial on the web',
-        'done': False
+        'sepal length (cm)': 6,
+        'sepal width (cm)': 2.7,
+        'petal length (cm)': 5.1,
+        'petal width (cm)': 1.6,
+        'target': 1,
     }
 ]
 
 # Default for marshal function
 task_fields = {
-    'title': fields.String,
-    'description': fields.String,
-    'done': fields.Boolean,
-    'uri': fields.Url('task')
+    'sepal length (cm)': fields.String,
+    'sepal width (cm)': fields.String,
+    'petal length (cm)': fields.String,
+    'petal width (cm)': fields.String,
+    'target': fields.String,
 }
 
 # Task List API: /todo/api/v1.0/tasks
 
 
-class TaskListAPI(Resource):
+class PredictionListAPI(Resource):
     decorators = [auth.login_required]
 
     def __init__(self):
         #
         self.reqparse = reqparse.RequestParser()
-        self.reqparse.add_argument('title', type=str, required=True,
-                                   help='No task title provided',
+        self.reqparse.add_argument('sepal length (cm)', type=str,
+                                   required=True,
+                                   help='sepal length (cm) not provided',
                                    location='json')
-        self.reqparse.add_argument('description', type=str, default="",
+        self.reqparse.add_argument('sepal width (cm)', type=str, required=True,
+                                   help='sepal width (cm) not provided',
+                                   location='json')
+        self.reqparse.add_argument('petal length (cm)', type=str,
+                                   required=True,
+                                   help='petal length (cm) not provided',
+                                   location='json')
+        self.reqparse.add_argument('petal width (cm)', type=str, required=True,
+                                   help='petal width (cm) not provided',
                                    location='json')
         # Inherite class from another class
-        super(TaskListAPI, self).__init__()
+        super(PredictionListAPI, self).__init__()
 
     def get(self):
         return {'tasks': [marshal(task, task_fields) for task in tasks]}
@@ -79,24 +106,39 @@ class TaskListAPI(Resource):
         args = self.reqparse.parse_args()
         task = {
             'id': tasks[-1]['id'] + 1,
-            'title': args['title'],
-            'description': args['description'],
-            'done': False
+            'sepal length (cm)': args['sepal length (cm)'],
+            'sepal width (cm)': args['sepal width (cm)'],
+            'petal length (cm)': args['petal length (cm)'],
+            'petal width (cm)': args['petal width (cm)']
         }
+        datapoint_x = np.array(list(task.values()), dtype='float64')[1:]
+        datapoint_x = datapoint_x.reshape(1, -1)
+        task['target'] = loaded_model.predict(datapoint_x)[0]
         tasks.append(task)
         return {'task': marshal(task, task_fields)}, 201
 
 
 # Task API todo/api/v1.0/tasks/<int:id>
-class TaskAPI(Resource):
+class PredictionAPI(Resource):
     decorators = [auth.login_required]
 
     def __init__(self):
         self.reqparse = reqparse.RequestParser()
-        self.reqparse.add_argument('title', type=str, location='json')
-        self.reqparse.add_argument('description', type=str, location='json')
-        self.reqparse.add_argument('done', type=bool, location='json')
-        super(TaskAPI, self).__init__()
+        self.reqparse.add_argument('sepal length (cm)', type=str,
+                                   required=True,
+                                   help='sepal length (cm) not provided',
+                                   location='json')
+        self.reqparse.add_argument('sepal width (cm)', type=str, required=True,
+                                   help='sepal length (cm) not provided',
+                                   location='json')
+        self.reqparse.add_argument('petal length (cm)', type=str,
+                                   required=True,
+                                   help='petal length (cm) not provided',
+                                   location='json')
+        self.reqparse.add_argument('petal width (cm)', type=str, required=True,
+                                   help='petal width (cm) not provided',
+                                   location='json')
+        super(PredictionAPI, self).__init__()
 
     def get(self, id):
         task = [task for task in tasks if task['id'] == id]
@@ -125,8 +167,9 @@ class TaskAPI(Resource):
 
 # Adding the resources for the todo/api/v1.0/tasks/<int:id>
 # and /todo/api/v1.0/tasks
-api.add_resource(TaskListAPI, '/todo/api/v1.0/tasks', endpoint='tasks')
-api.add_resource(TaskAPI, '/todo/api/v1.0/tasks/<int:id>', endpoint='task')
+api.add_resource(PredictionListAPI, '/todo/api/v1.0/tasks', endpoint='tasks')
+api.add_resource(PredictionAPI, '/todo/api/v1.0/tasks/<int:id>',
+                 endpoint='task')
 
 
 if __name__ == '__main__':
