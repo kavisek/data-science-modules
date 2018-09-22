@@ -1,3 +1,6 @@
+# DataScience
+
+This repo is my main directory for all the open source data analysis that I have finished. I upload the changes to this directory on a constant basis as I am building Python and Data Science content all the time. The purpose behind this is to be able to share my work with my local Data Science colleagues.
 
 ### Sub Directory Summary
 
