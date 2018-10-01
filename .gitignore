@@ -17,6 +17,7 @@
 *.gz
 *.sav
 *.zip
+*.dot
 
 # Hidden Folders
 Whitepapers
