@@ -5,7 +5,6 @@ This repo is my main directory for all the open source data analysis that I have
 ### Sub Directory Summary
 
 - Basic - general python notebooks, testing out python code<br>
-- Competitions - catalogue of competition attempts<br>
 - Descriptive - data wrangling and visualizations of public datasets and problems <br>
 - Notes - Notes for bash commands<br>
 - Other - notebooks about random/ad-hoc stuff <br>
