@@ -18,6 +18,7 @@
 *.sav
 *.zip
 *.dot
+*.icloud
 
 # Hidden Folders
 Whitepapers
