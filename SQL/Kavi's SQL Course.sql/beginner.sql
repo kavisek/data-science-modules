@@ -18,6 +18,8 @@ USE world;
 
 SELECT * FROM city;
 
+SELECT * FROM city LIMIT 10;
+
 -- --------------------------------------
 -- WHERE statement (99% of queries)
 -- --------------------------------------
@@ -39,5 +41,42 @@ WHERE NAME = 'Loja'
 OR Population > 10000
 
 -- --------------------------------------
--- WHERE statement
+-- Craeting Columns in SLQ Query
 -- --------------------------------------
+
+
+SELECT NAME, COUNTRYCODE, 1 AS Numeric_Columns
+FROM city;
+
+SELECT NAME, COUNTRYCODE, 'City' AS String_Columns
+FROM city;
+
+
+-- --------------------------------------
+-- Case Statment
+-- --------------------------------------
+
+SELECT *,
+    CASE
+      WHEN countrycode = 'AFG' THEN 1
+      ELSE 0
+    END AS Flag
+FROM city
+
+-- --------------------------------------
+-- Cast Statement with Multiple Conditions
+-- --------------------------------------
+
+SELECT *,
+    CASE
+      WHEN countrycode = 'AFG' THEN 1
+      WHEN countrycode = 'NLD' THEN 2
+      ELSE 0
+    END AS Flag
+FROM city
+
+-- --------------------------------------
+-- Self WHERE Statment
+-- --------------------------------------
+
+SELECT * FROM city WHERE LENGTH(Name) > LENGTH(District)
