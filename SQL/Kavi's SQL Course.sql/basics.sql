@@ -21,6 +21,19 @@ SELECT * FROM city;
 SELECT * FROM city LIMIT 10;
 
 -- --------------------------------------
+-- Selecting Specific Names
+-- --------------------------------------
+
+SELECT Name, CountryCode FROM city
+
+
+-- --------------------------------------
+-- DISTINCT Values
+-- --------------------------------------
+
+SELECT DISTINCT countrycode FROM city;
+
+-- --------------------------------------
 -- WHERE statement (99% of queries)
 -- --------------------------------------
 
@@ -80,3 +93,14 @@ FROM city
 -- --------------------------------------
 
 SELECT * FROM city WHERE LENGTH(Name) > LENGTH(District)
+
+
+
+-- --------------------------------------
+-- IN Statemnt
+-- --------------------------------------
+
+SELECT * FROM city WHERE countrycode IN ('AFG','DZA')
+l
+
+SELECT * FROM city WHERE countrycode NOT IN ('AFG','DZA')
