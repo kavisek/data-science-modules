@@ -5,6 +5,7 @@ After working in the industry for a few month. Regex went from a tool I avoided 
 The following resources helped developing my skills and troubleshoot by Regex statements within my workspace.
 
 Regex 101: https://regex101.com/
+Chris Albon: https://chrisalbon.com/ (Search Regex)
 
 ### Matching Dates
 
