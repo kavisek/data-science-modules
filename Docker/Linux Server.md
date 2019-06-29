@@ -5,13 +5,13 @@ Pull docker image
 ``docker pull debian``
 
 Set up the docker container  
-```docker run --name boji -it debian /bin bash``
+```docker run --name tommy -it debian /bin bash``
 
 Stop docker container  
-``docker stop boji``
+``docker stop tommy``
 
 Start docker container  
-``docker start boji``
+``docker start tommy``
 
 Reattached to started docker container  
-``docker attached boji``
+``docker attached tommy``
