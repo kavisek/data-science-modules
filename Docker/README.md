@@ -1,29 +1,34 @@
 # <center> Docker Shorthand </center>
 
-### Images Managment
+![](Images/docker_image.png)
+
+This a consolidation docker command and docker note created by the community.
+
+Reference can be sound at the bottom of the page.
+
+### Image Management
 
 ```bash
-
-# pull down two docker images
+# Pull down two docker images
 docker pull debian
 docker pull mysql/mysql-server
 
 # View  images
 docker images
 
-# remove all dangling images, volumes, and networks not associated  with a container
+# Remove all dangling images, volumes, and networks not associated  with a container
 docker system prune
 
-# remove all unused images, volumes, and networks not associated  with a container
+# Remove all unused images, volumes, and networks not associated  with a container
 docker system prune -a
 
-# view images (the results of the pruning)
+# View images (the results of the pruning)
 docker images
 
-# remove one image
+# Remove one image
 docker debian mysql/mysql-server
 
-# remove multiple image
+# Remove multiple image
 docker rmi debian mysql/mysql-server
 ```
 
@@ -41,14 +46,21 @@ docker start tommy
 docker attach tommy
 ```
 
-### Container Managments
+### Container Managment
 
 ```bash
+# View active docker containers
+docker ps
 
+# View all docker containers
+docker ps -a
 
+# Remove a docker container
+docker rm tommy
 
-
-````
+# Remove more than one docker containe
+docker rm tommy jeremy
+```
 
 ### Saving and Loading Containers
 
@@ -75,3 +87,4 @@ docker run --name douglas -it debian:new /bin/bash
 ### References
 
 - https://docs.docker.com/engine/reference/commandline/import/
+- https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
