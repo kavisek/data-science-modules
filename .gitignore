@@ -19,6 +19,7 @@
 *.zip
 *.dot
 *.icloud
+*.twbx
 
 # Hidden Folders
 Whitepapers
