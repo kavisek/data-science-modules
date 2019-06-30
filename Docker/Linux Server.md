@@ -13,7 +13,7 @@ To use this tutorial you will need in install [Docker Desktop](https://www.docke
 docker pull debian
 
 # Set up the docker container
-docker run --name tommy2 -it debian /bin/bash
+docker run --name tommy -it debian /bin/bash
 
 # Check Debian version, the output should be a float (i.e. 9.9)
 cat /etc/debian_version

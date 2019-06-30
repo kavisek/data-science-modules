@@ -94,7 +94,10 @@ docker run --name douglas -it debian:new /bin/bash
 ### Docker Images Shortcuts
 
 ```bash
-# Start mysql database via docker
+# Start a Linux Debian server
+docker run --name tommy -it debian /bin/bash
+
+# Start MYSQL database via docker
 docker run -p 3306:3306 --name robert -e MYSQL_ROOT_PASSWORD=password -d mysql:5.7 --default-authentication-plugin=mysql_native_password
 
 # Start an Apache Airflow Server via docker
@@ -104,11 +107,20 @@ docker run -d -p 8080:8080 -e LOAD_EX=y puckel/docker-airflow
 docker run -d -p 8888:8888 -v $PWD:/home/jovyan/work --name spark jupyter/pyspark-notebook
 ```
 
+### File Transfer
 
+The file transfer must be done from the host computer.
+```bash
+# Transfer file from host compute into docker container
+# docker cp [Source] [Destination]
+docker cp /Users/kavi/Desktop/test_image.png tommy:/root/
+```
 
 ### References
 
 The link below contain further reading on source references and documentation from the community on how to best use docker.
 
+
 - https://docs.docker.com/engine/reference/commandline/import/
 - https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
+- https://docs.docker.com/engine/reference/commandline/cp/
