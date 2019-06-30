@@ -1,6 +1,6 @@
 # <center> Docker for DataScience </center>
 
-<center>![](Images/docker_image.png)</center><br>
+<p align="center">![](Images/docker_image.png)</p>
 
 This a file is a consolidation of docker command and notes sourced form the community. Reference can be found at the bottom of page.
 
