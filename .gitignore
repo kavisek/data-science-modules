@@ -20,6 +20,7 @@
 *.dot
 *.icloud
 *.twbx
+*.tar
 
 # Hidden Folders
 Whitepapers
