@@ -7,8 +7,6 @@
 *.txt
 *.xls
 *.json
-*.jpg
-*.png
 *.pkl
 *.jpeg
 *.h5
