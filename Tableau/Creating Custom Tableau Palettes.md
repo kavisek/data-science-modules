@@ -1,4 +1,4 @@
-# <center> Tableau Custom Palettes </center>
+# <center> Tableau Custom Color Palettes </center>
 
 When you install Tableau Desktop on your machine. The machine will create a directory called "My Tableau Repository" to store all your Tableau data within. This directory also contains a preference file that allows you to upload customre preference to your Tableau Desktop Editor.
 
