@@ -114,6 +114,9 @@ The file transfer must be done from the host computer.
 # Transfer file from host compute into docker container
 # docker cp [Source] [Destination]
 docker cp /Users/kavi/Desktop/test_image.png tommy:/root/
+
+# Transfer an entire directory from our host machine to the docker container
+docker cp ~/SSL  tommy:/root/SSL
 ```
 
 ### References
