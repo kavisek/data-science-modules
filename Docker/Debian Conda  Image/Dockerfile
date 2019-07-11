@@ -1,5 +1,5 @@
 # Pull Image from docker hub
-FROM debian
+FROM conda/miniconda3
 
 # Set working directory
 WORKDIR /root

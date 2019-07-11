@@ -6,7 +6,7 @@ Feel free to download the Dockerfile within this repo to follow the example belo
 
 ```bash
 # Navigate to the current Directory
-cd ~/Repos/Science/Docker/Basic\ Linux\ Server/
+cd ~/Repos/Science/Docker/Basic\ Linux\ Image/
 
 # Build docker container (image name is set to "test_image")
 docker build -t test_image .
