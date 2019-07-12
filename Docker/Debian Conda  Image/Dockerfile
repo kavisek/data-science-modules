@@ -22,18 +22,18 @@ RUN conda create --name airflow python=3.6 -y
 # Conda Package Installations
 RUN /bin/bash -c "source activate airflow \
   && conda install pandas -y \
-  && conda install -c conda-forge gspread -y
-  && conda install -c conda-forge jupyterlab -y
-  && conda install -c conda-forge gspread -y
-  && conda install -c anaconda boto -y
-  && conda install -c conda-forge tqdm -y
-  && conda install -c annetheagile httplib2 -y
-  && conda install -c conda-forge oauth2client -y
-  && conda install -c conda-forge python-utils -y
-  && conda install mysql-connector-python==2.2.3 -y
-  && conda install mysql-connector-c==6.1.6 -y
-  && conda install pandas -y
-  && conda install airflow=1.10.3 -y
+  && conda install -c conda-forge gspread -y \
+  && conda install -c conda-forge jupyterlab -y \
+  && conda install -c conda-forge gspread -y \
+  && conda install -c anaconda boto -y \
+  && conda install -c conda-forge tqdm -y \
+  && conda install -c annetheagile httplib2 -y \
+  && conda install -c conda-forge oauth2client -y \
+  && conda install -c conda-forge python-utils -y \
+  && conda install mysql-connector-python==2.2.3 -y \
+  && conda install mysql-connector-c==6.1.6 -y \
+  && conda install pandas -y \
+  && conda install airflow=1.10.3 -y \
   && conda deactivate"
 
 # Make port 8080
