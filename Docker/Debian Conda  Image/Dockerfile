@@ -10,22 +10,31 @@ COPY . /root/
 # print out the content of what was uploaded to our root folder
 RUN ls -la /root/*
 
-# Conda Package Installations
+# Update Conda
 RUN conda update -n base -c defaults conda # Update conda
 RUN conda config --add channels conda-forge
-RUN conda create --name airflow -y
-RUN /bin/bash -c "source activate airflow"
-RUN conda install -c conda-forge jupyterlab -y
-RUN conda install -c conda-forge gspread -y
-RUN conda install -c anaconda boto -y
-RUN conda install -c conda-forge tqdm -y
-RUN conda install -c annetheagile httplib2 -y
-RUN conda install -c conda-forge oauth2client -y
-RUN conda install -c conda-forge python-utils -y
-RUN conda install mysql-connector-python==2.2.3 -y
-RUN conda install mysql-connector-c==6.1.6 -y
-RUN conda install pandas -y
-RUN conda install airflow=1.10.3 -y
+
+# Create Conda Virtual Enviroment
+RUN conda create --name airflow python=3.6 -y
+# RUN echo "source activate airflow" > ~/.bashrc
+# ENV PATH /opt/conda/envs/env/bin:$PATH
+
+# Conda Package Installations
+RUN /bin/bash -c "source activate airflow \
+  && conda install pandas -y \
+  && conda install -c conda-forge gspread -y
+  && conda install -c conda-forge jupyterlab -y
+  && conda install -c conda-forge gspread -y
+  && conda install -c anaconda boto -y
+  && conda install -c conda-forge tqdm -y
+  && conda install -c annetheagile httplib2 -y
+  && conda install -c conda-forge oauth2client -y
+  && conda install -c conda-forge python-utils -y
+  && conda install mysql-connector-python==2.2.3 -y
+  && conda install mysql-connector-c==6.1.6 -y
+  && conda install pandas -y
+  && conda install airflow=1.10.3 -y
+  && conda deactivate"
 
 # Make port 8080
 EXPOSE 8080
