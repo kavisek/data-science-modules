@@ -13,8 +13,8 @@ docker build -t test_image .
 
 # Run the docker container after the build is complete
 # The container is using the "test_image" image
-# The container is named "tommy"
-docker run --name tommy -it test_image  /bin/bash
+# The container is named "test_container
+docker run --name test_container -it test_image  /bin/bash
 ```
 
 
