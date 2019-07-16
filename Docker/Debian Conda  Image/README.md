@@ -44,3 +44,5 @@ Sources
 
 - https://hub.docker.com/r/conda/miniconda3/dockerfile
 - https://stackoverflow.com/questions/20635472/using-the-run-instruction-in-a-dockerfile-with-source-does-not-work
+- https://medium.com/@chadlagore/conda-environments-with-docker-82cdc9d25754
+- https://stackoverflow.com/questions/55123637/activate-conda-environment-in-docker
