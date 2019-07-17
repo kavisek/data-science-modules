@@ -24,4 +24,10 @@ cd ..
 cp mkdir/* mkdir2/*
 ```
 
-#### Testing
+#### Removing Directory
+
+```bash
+# Remove a directory all its contents (including sub folders)
+rm -rf folder
+```
+
