@@ -31,3 +31,9 @@ cp mkdir/* mkdir2/*
 rm -rf folder
 ```
 
+#### Opening Window
+
+```bash
+
+
+```
