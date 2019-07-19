@@ -31,9 +31,8 @@ cp mkdir/* mkdir2/*
 rm -rf folder
 ```
 
-#### Opening Window
+#### View Active Process on Machine
 
 ```bash
-
-
+top
 ```
