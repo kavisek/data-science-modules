@@ -36,3 +36,19 @@ rm -rf folder
 ```bash
 top
 ```
+
+### Pip Free and Requirement Folder
+
+Export enviroment package versions into a requirements file.
+```
+conda activate airflow
+pip freeze > requirement.txt
+```
+
+
+### Install into Linux Enviroment
+
+Only do this in your docker file. Do not do this in main machine.
+```
+pip install requirement.txt
+```
