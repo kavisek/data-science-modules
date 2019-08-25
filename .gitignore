@@ -31,5 +31,5 @@ Backups
 /Data/Images/
 
 
-
-!/AWS/*.json
+# Whitelist these folder with .gitignore
+!/AWS/Policies/*
