@@ -32,4 +32,4 @@ Backups
 
 
 # Whitelist these folder with .gitignore
-!/AWS/Policies/*
+!/AWS/Policies/* #Upload All Content within this folder

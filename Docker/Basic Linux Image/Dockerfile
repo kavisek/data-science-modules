@@ -19,7 +19,7 @@ RUN cd /tmp && curl -O https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x
 # Copy all of the current dictories content so the docker container
 COPY . /root/
 
-# print out the content of what was uploaded to our root folder
+# print out all content of what was uploaded to our root folder
 RUN ls -la /root/*
 
 

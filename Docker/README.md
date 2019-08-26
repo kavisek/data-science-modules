@@ -119,6 +119,33 @@ docker cp /Users/kavi/Desktop/test_image.png tommy:/root/
 docker cp ~/SSL  tommy:/root/SSL
 ```
 
+### Stop, Start, and Attach to a container
+
+```bash
+# Stop the container
+docker stop basic_container
+
+# Start the container
+docker start basic_container
+
+# connect to the container
+docker attach basic_container
+```
+
+
+### Stop & Remove docker containers
+
+```bash
+# Stop all Containers
+docker kill $(docker ps -q)
+
+# Remove all containers
+docker rm $(docker ps -a -q)
+
+# Remove all docker images
+docker rmi $(docker images -q)
+```
+
 ### References
 
 The link below contain further reading on source references and documentation from the community on how to best use docker.

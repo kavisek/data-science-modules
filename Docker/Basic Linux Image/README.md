@@ -9,12 +9,12 @@ Feel free to download the Dockerfile within this repo to follow the example belo
 cd ~/Repos/Science/Docker/Basic\ Linux\ Image/
 
 # Build docker container (image name is set to "test_image")
-docker build -t test_image .
+docker build . -t basic_image
 
 # Run the docker container after the build is complete
 # The container is using the "test_image" image
 # The container is named "test_container
-docker run --name test_container -it test_image  /bin/bash
+docker run --name basic_container -it basic_image  /bin/bash
 ```
 
 

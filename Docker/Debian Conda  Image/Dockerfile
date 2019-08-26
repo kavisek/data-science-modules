@@ -20,7 +20,7 @@ RUN conda create --name airflow python=3.6 -y
 # ENV PATH /opt/conda/envs/env/bin:$PATH
 
 # Conda Package Installations
-RUN /bin/bash -c "source activate airflow \
+# RUN /bin/bash -c "source activate airflow \
   && conda install pandas -y \
   && conda install -c conda-forge gspread -y \
   && conda install -c conda-forge jupyterlab -y \
