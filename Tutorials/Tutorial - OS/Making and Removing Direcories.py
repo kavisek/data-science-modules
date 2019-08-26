@@ -1,6 +1,7 @@
 # Import os module
 import os
 import time
+
 # Will create a subdirectory called data2
 # If a subdirectory already exists then the method will return a FileExitsError
 print('Creating file...')
