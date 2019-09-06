@@ -1,5 +1,7 @@
 # <center> Github for DataScience </center>
 
+![Git Image](https://miro.medium.com/max/1600/1*OY34A4uBsawmGoqpBV3UaA.png)
+
 In summary. Git is a version control system.
 
 Github is a platform for storing and managing you git repositories. Github and git are two different things. One is  aversion control system the other is a platform. GitHub
@@ -10,7 +12,16 @@ There are many platform online that support Git repositories. A few are listed b
  - [Github]()
  - [Gitlab]()
 
-### Cloning a repository
+### CheatSheet
+
+This guide may not meet all your needs. Therefore checkout some of the CheatSheets linked below.
+
+- [Git CheatSheet by Tower](https://www.git-tower.com/blog/git-cheat-sheet/)
+- [Git CheatSheet by Github](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)
+- [Git CheatSheet by GitLab](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
+- [Git CheatSheet by Atlassian]( https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
+
+#### Cloning a repository
 
 This following command pull a repository from Github and clones the file to your computer.
 
@@ -19,7 +30,7 @@ This following command pull a repository from Github and clones the file to your
 git clone https://github.com/kavisek/DataScience.git
 ```
 
-### The Basics
+#### The Basics
 
 If you are working on a repository by yourself. You will most commonly be using the following commands.
 
@@ -49,14 +60,44 @@ git commit -m 'adding new test.txt file to project'
 git push
 ```
 
-### Adding and Committing Multiple File
+#### Adding and Committing Multiple File
 ```bash
-# Add multiple file to the git hub repo.
+# Add multiple file to the project repository.
 git add .
 
-# Comitting filesystem
+# Committing filesystem
 git commit -m 'adding many file to repo'
 
 # Push files to repository
 git push
 ```
+
+
+#### View Repository Logs
+
+```bash
+# Viewing the repository logs in a pretty, oneline per commit
+git log --pretty=oneline
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<center> AUthor: Kavi Sekhon </center>
