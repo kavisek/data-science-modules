@@ -12,7 +12,7 @@ There are many platform online that support Git repositories. A few are listed b
  - [Github]()
  - [Gitlab]()
 
-### CheatSheet
+### Community CheatSheets
 
 This guide may not meet all your needs. Therefore checkout some of the CheatSheets linked below.
 
@@ -77,8 +77,15 @@ git push
 
 ```bash
 # Viewing the repository logs in a pretty, oneline per commit
-git log --pretty=oneline
+git log --oneline
 
+# Viewing the repository logs in a pretty, oneline per commit with a graph
+git log --oneline --graph
+
+# View the last 3 Commits
+git log -n 3
+
+# View the last commits  
 
 ```
 
