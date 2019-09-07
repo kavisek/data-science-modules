@@ -14,17 +14,8 @@ docker run -d --name my_postgres -v my_dbdata:/var/lib/postgresql/data -p 54320:
 conda create -n postgres python=3.6 \
 && source activate postgresql \
 && pip install psycopg2-binary \
+&& conda install -c anaconda sqlalchemy \
 ```
-
-
-
-
-
-
-
-
-
-
 
 
 ### References
