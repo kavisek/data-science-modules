@@ -30,6 +30,8 @@ Kaggle
 Backups
 /Data/Images/
 
+# More Hidden Folders
+/AWS/Instructions/
 
 # Whitelist these folder with .gitignore
 !/AWS/Policies/* #Upload All Content within this folder
