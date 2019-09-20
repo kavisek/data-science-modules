@@ -29,8 +29,10 @@ BrainStation
 Kaggle
 Backups
 /Data/Images/
+__pycache__/
+.ipynb_checkpoints/*
 
-# More Hidden Folders
+# Hidden AWS Guides
 /AWS/Instructions/
 
 # Whitelist these folder with .gitignore
