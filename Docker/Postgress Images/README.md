@@ -40,7 +40,7 @@ SHOW server_version;
 
 ### Connecting to Database via Postico
 
-Now that the datbase is running within a docker container. We can now connect to this database
+Now that the database is running within a docker container. We can now connect to this database
 
 
 ![Images](Images/postico_image.png)
