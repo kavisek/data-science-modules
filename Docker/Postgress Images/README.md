@@ -56,12 +56,14 @@ Now that the database is running within a docker container. We can now connect t
 We can also connect to the database using python. Create a conda virtual environment using the following command with the following requirements. Next, install jupyter notebooks. Open up the `19-09-06 Postgres Connector` and run the python code within the notebook. The code with notebook will go over how to write data into database and how to pull data from your database.
 
 ```
+# Create a conda virtual environment using Python 3.6 and install SQL Alchemy
 conda create -n postgres python=3.6 \
 && source activate postgresql \
 && pip install psycopg2-binary \
 && conda install -c anaconda sqlalchemy \
 ```
 
+You might need to install extra package to get the notebooks within this repo to work. This should be pretty easy if you have experience with conda.
 
 ### References
 
