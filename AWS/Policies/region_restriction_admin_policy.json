@@ -2,14 +2,14 @@
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "DenyAllRegionsExceptNorthVirginia",
+            "Sid": "DenyAllRegionsExceptCanada",
             "Effect": "Deny",
             "Action": "*",
             "Resource": "*",
             "Condition": {
                 "StringNotEquals": {
                     "aws:RequestedRegion": [
-                        "us-east-1"
+                        "ca-central-1"
                     ]
                 }
             }
@@ -22,6 +22,7 @@
         }
     ]
 }
+
 
 
 Documentation Source: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_aws_deny-requested-region.html
