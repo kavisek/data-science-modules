@@ -1,0 +1,87 @@
+#  Writing Data to a Postgres Database using Docker
+
+This example goes over how to create a docker container on your local computer using docker. The notebook within this directory goes over how to connect the docker container on your machine and how to read and write data to the database using pandas and sql alchemy.
+
+Starting a local docker container
+After you install docker on your local laptop. Run the following command to install a postgres docker container on you local computer:.
+
+
+```bash
+# Run a postgres docker container using a public image
+docker run -d --name my_postgres -v my_dbdata:/var/lib/postgresql/data -p 54320:5432 postgres:9.6.16
+```
+
+If you want your container to start automatically whenever the host machine has restarted. Use the docker update command to update the container's restart parameter
+
+```bash
+docker update my_postgres --restart unless-stopped
+```
+
+### Connecting to the Database
+
+You can connect to the database using this command line using the following docker command in your terminal session.
+
+```bash
+# Connect to the database via bash
+docker exec -it my_postgres psql -U postgres
+
+```
+
+Once we are connected to the container. Now we can run SQL commands in terminal session against our postgres database.
+
+```sql
+-- View the current databases
+\d
+
+-- Check the current version of Postgres
+SHOW server_version;
+
+
+-- Disconnect from Postgres server
+\q
+```
+
+### Connecting to Database via Postico
+
+Now that the database is running within a docker container. We can now connect to this database using a third-party software if needed.
+
+
+![Images](Images/postico_image.png)
+
+## Creating Conda Enviroment
+
+We can also connect to the database using python. Create a conda virtual environment using the following command with the following requirements. Next, install jupyter notebooks. Open up the `19-09-06 Postgres Connector` and run the python code within the notebook. The code with notebook will go over how to write data into database and how to pull data from your database.
+
+```
+# Create a conda virtual environment using Python 3.6 and install SQL Alchemy
+conda create -n postgres python=3.6 \
+&& source activate postgresql \
+&& pip install psycopg2-binary \
+&& conda install -c anaconda sqlalchemy \
+```
+
+You might need to install extra package to get the notebooks within this repo to work. This should be pretty easy if you have experience with conda.
+
+### Creating Tables
+
+You can insert some data using the sql code below, or use the python script within this repo to upload some sample data.
+
+```sql
+-- Creating a sample table in postgres
+DROP TABLE IF EXISTS account;
+CREATE TABLE account(
+   user_id serial PRIMARY KEY,
+   username VARCHAR (50) UNIQUE NOT NULL,
+   password VARCHAR (50) NOT NULL,
+   email VARCHAR (355) UNIQUE NOT NULL,
+   created_on TIMESTAMP NOT NULL DEFAULT NOW());
+
+INSERT INTO account (user_id, username, password, email) VALUES  (1,'bob','babysitter','bob@example.com');
+INSERT INTO account (user_id, username, password, email) VALUES  (2,'steve','babysitter','steve@example.com');
+INSERT INTO account (user_id, username, password, email) VALUES  (3,'ted','babysitter','ted@example.com');
+INSERT INTO account (user_id, username, password, email) VALUES  (4,'sophie','babysitter','sophie@example.com');
+```
+
+### References
+
+https://www.saltycrane.com/blog/2019/01/how-run-postgresql-docker-mac-local-development/
