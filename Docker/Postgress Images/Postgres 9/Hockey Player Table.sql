@@ -3,6 +3,7 @@
 
 -- Table Definition ----------------------------------------------
 
+USE nhl;
 CREATE TABLE hockey_players (
     player_id bigint,
     "firstName" text,
@@ -11,5 +12,6 @@ CREATE TABLE hockey_players (
     "birthCity" text,
     "primaryPosition" text,
     "birthDate" text,
-    link text
+    link text,
+    created_on TIMESTAMP NOT NULL DEFAULT NOW()
 );
