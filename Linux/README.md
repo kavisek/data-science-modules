@@ -33,6 +33,8 @@ rm -rf folder
 
 ## <center> Data Analyis
 
+## Cat, Head, Tail
+
 ```bash
 # View the contents of a file
 cat temp_data.csv
@@ -47,6 +49,8 @@ tail -n 1 temp_data.csv
 head -n 300 temp_data.csv > temp_data2.csv
 ```
 
+### Word Count
+
 ```bash
 # A count of words, lines, and characters within a file
 wc temp_data.csv
@@ -60,6 +64,8 @@ wc -l temp_data.csv
 # A count of character within a file
 wc -c temp_data.csv
 ```
+
+### Aho, Weinberger, and Kernighan
 
 ```bash
 # Print the number of charcater for the longest line in the file
