@@ -9,38 +9,27 @@ Feel free to download the Dockerfile within this repo to follow the example belo
 cd ~/Repos/Science/Docker/Basic\ Linux\ Image/
 
 # Build docker container (image name is set to "test_image")
-docker build . -t basic_image
+docker build . -t conda_image
 
 # Run the docker container after the build is complete
 # The container is using the "test_image" image
 # The container is named "test_container
-docker run --name basic_container -it basic_image  /bin/bash
+docker run --name conda_container -it conda_image  /bin/bash
 ```
 
 
-The output should look similar to the following if everything worked smoothly.
+The last part of output should look similar to the following if everything worked smoothly.
 
 ```bash
-Sending build context to Docker daemon  6.656kB
-Step 1/5 : FROM debian
- ---> e1de74e67cc7
-Step 2/5 : WORKDIR /root
- ---> Running in 5230fac70e8e
-Removing intermediate container 5230fac70e8e
- ---> a45025dbb8df
-Step 3/5 : COPY . /root/
- ---> 3f0a7fe6678a
-Step 4/5 : RUN ls -la /root/*
- ---> Running in 77642a1a7ff9
--rw-r--r-- 1 root root  278 Jul 11 09:56 /root/Dockerfile
--rw-r--r-- 1 root root  547 Jul 11 09:57 /root/README.md
--rw-r--r-- 1 root root 2153 Jul 11 09:42 /root/sample.txt
-Removing intermediate container 77642a1a7ff9
- ---> 3c7194008e46
-Step 5/5 : EXPOSE 8080
- ---> Running in e77c3b6f7725
-Removing intermediate container e77c3b6f7725
- ---> 8a21692efadd
-Successfully built 8a21692efadd
-Successfully tagged test_image:latest
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+Removing intermediate container 83755a5be9fc
+ ---> b3cb448d904f
+Step 22/22 : EXPOSE 8080
+ ---> Running in 7033fe3374e4
+Removing intermediate container 7033fe3374e4
+ ---> 7eb97a87c0b2
+Successfully built 7eb97a87c0b2
+Successfully tagged test_conda_image:latest
 ```
