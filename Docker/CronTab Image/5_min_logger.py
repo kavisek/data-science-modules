@@ -1,4 +1,4 @@
-#!/Users/kavi/anaconda3/envs/nurse/bin/env python3
+#!/usr/local/envs/main/bin/env python
 
 # Import Modules
 import os

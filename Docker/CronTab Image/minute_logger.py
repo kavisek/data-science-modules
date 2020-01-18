@@ -7,7 +7,7 @@ from datetime import datetime
 # Get curernt working directory
 cwd = os.getcwd()
 log_dir = '/logs'
-scirpt_dir = '/logs/daily_logger'
+scirpt_dir = '/logs/minute_logger'
 
 # Create "logs" sub-directory if it doesn't exist
 if not os.path.exists(cwd+log_dir):

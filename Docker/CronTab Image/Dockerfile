@@ -9,6 +9,7 @@ COPY . /root/
 
 # Install Linux Packages
 RUN apt-get update
+RUN apt-get install -y --no-install-recommends apt-utils
 RUN apt-get install sudo  -y
 RUN sudo apt-get install bzip2
 RUN sudo apt-get install curl -y
@@ -19,6 +20,7 @@ RUN sudo apt install nano
 RUN sudo apt-get install screen
 RUN sudo apt-get install lsof
 RUN sudo apt install git -y
+RUN sudo apt-get install grep
 
 # Install MYSQL Command Line client
 RUN apt-get install -y mysql-client
