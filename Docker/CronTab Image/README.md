@@ -1,11 +1,13 @@
 # <center> Crontab Image
 
-This image deals with setting up a crontab with our conda image. We will be setting the crontab in the linux container and running python script on regular interval. Each script will have its own virtual environment.
+This image uses crontab to run 4 python scripts. Each script generates a .txt file as an output. The file is added the logs folder at "/root/logs/[script_name]/" when the script successfully runs.
 
 ### Build Docker File
 
+The following commands will help you build a docker container with a conda virtual environment, linux tools, sample python scripts, and a crontab setup script.
+
 ```bash
-# Navigate to the current Directory
+# Navigate to the current directory or cloned repo location
 cd /Users/kavi/science/Docker/CronTab\ Image
 
 # Build docker container
@@ -15,34 +17,50 @@ docker build -t crontab_image .
 docker run --name crontab_container -it crontab_image  /bin/bash
 ```
 
-### Is Crontab Running?
+### Creating and Running our Crontab Jobs
 
 ```bash
-/etc/init.d/cron start
+# Run a bash script to set up our crontab with the jobs
+bash setup_crontab.sh
+```
+
+Each sample script run at following time intervals.
+
+- Every minute
+- Every 5 minutes
+- Every hour
+- Once a Day at 12 AM
+
+You should the first output from the first crontab job after a minutes within the "root/logs" folder.
+
+If everything works. Congrats, you have a working crontab.
+
+### View Script Outputs
+
+```bash
+# List python script outputs
+ls /root/logs/minute_logger/* -ltr
+```
+
+# <center> Additional Commands for Troubleshooting
+
+
+### Is Crontab Running?
+
+The following commands will help if you need to start/stop/restart or check status of your crontab.
+
+```bash
+sudo service cron start
 sudo service cron status
 sudo service cron stop
-sudo service cron start
 sudo service cron restart
 ```
 
-### Creating our Crontab File
-
-```bash
-# Create a new cron file
-crontab -l > mycron
-
-# Writing crontab jobs to file
-echo "5 * * * * /usr/local/envs/main/bin/python /root/5_min_logger.py > /root/5_min_logger.log 2>&" >> mycron
-echo "0 * * * * /usr/local/envs/main/bin/python /root/hourly_logger.py > /root/hourly_logger.log 2>&" >> mycron
-echo "0 0 * * * /usr/local/envs/main/bin/python /root/daily_logger.py > /root/daily_logger.log 2>&" >> mycron
-
-# Installing crontab file
-crontab mycron
-
-# Remove crontab file
-rm mycron
-```
 
 ### View crontab logs
 
-cat /var/mail
+If you crontab does not run it will log its errors within the following file.
+
+```bash
+# View Error contab
+cat /var/mail/mail
