@@ -42,3 +42,7 @@ crontab mycron
 # Remove crontab file
 rm mycron
 ```
+
+### View crontab logs
+
+cat /var/mail
