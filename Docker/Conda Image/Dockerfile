@@ -4,23 +4,36 @@ FROM conda/miniconda3
 # Set working directory
 WORKDIR /root
 
-# Copy all of the current dicetories content so the docker container
+# Copying File to Room Directory
 COPY . /root/
 
-# print out the content of what was uploaded to our root folder
-RUN ls -la /root/*
+# Install Linux Packages
+RUN apt-get update
+RUN apt-get install sudo  -y
+RUN sudo apt-get install bzip2
+RUN sudo apt-get install curl -y
+RUN sudo apt-get install wget
+RUN sudo apt install screen -y
+RUN sudo apt-get install postgresql postgresql-contrib -y
+RUN sudo apt install nano
+RUN sudo apt-get install screen
+RUN sudo apt-get install lsof
+RUN sudo apt install git -y
+
+# Install MYSQL Command Line client
+RUN apt-get install -y mysql-client
+RUN apt-get install -y libzbar-dev
+RUN sudo apt-get install libmariadbclient-dev
 
 # Update Conda
-RUN conda update -n base -c defaults conda # Update conda
+RUN conda update -n base -c defaults conda
 RUN conda config --add channels conda-forge
 
 # Create Conda Virtual Enviroment
-RUN conda create --name airflow python=3.6 -y
-# RUN echo "source activate airflow" > ~/.bashrc
-# ENV PATH /opt/conda/envs/env/bin:$PATH
+RUN conda create --name main python=3.6 -y
 
 # Conda Package Installations
- RUN /bin/bash -c "source activate airflow \
+ RUN /bin/bash -c "source activate main \
   && conda install pandas -y \
   && conda install -c conda-forge gspread -y \
   && conda install -c conda-forge jupyterlab -y \
@@ -32,7 +45,6 @@ RUN conda create --name airflow python=3.6 -y
   && conda install -c conda-forge python-utils -y \
   && conda install mysql-connector-python==2.2.3 -y \
   && conda install mysql-connector-c==6.1.6 -y \
-  && conda install airflow=1.10.3 -y \
   && conda deactivate"
 
 # Make port 8080
