@@ -11,7 +11,7 @@ RUN apt-get install sudo  -y
 RUN sudo apt-get install curl -y
 
 # Download Conda to "tmp" folder
-RUN cd /tmp && curl -O https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
+RUN
 
 
 # Install Conda
