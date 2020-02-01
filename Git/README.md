@@ -89,6 +89,41 @@ git log -n 3
 
 ```
 
+# Branching
+
+##### Create Branch
+
+```
+# Create a new branch
+git branch [new_branch]
+
+# Create a new checkout branch
+git checkout [new_branch]
+```
+
+
+### Merge Branch
+
+```bash
+# Checkout the branch about to recieve the merge
+git checkout master
+
+# Merge target branch into current branch
+git merge [target_branch_name]
+
+
+
+#### Delete Branch
+
+```bash
+# Delete local branch
+git branch -d [branch_name]
+
+# Delete remote branch
+git push origin --delete [branch_name]
+```
+
+
 
 
 
