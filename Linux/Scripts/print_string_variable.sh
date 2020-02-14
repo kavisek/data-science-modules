@@ -1,0 +1,2 @@
+str="test"
+echo $str
