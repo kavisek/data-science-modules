@@ -12,13 +12,12 @@ SELECT EMPLOYEE.company_code
   , founder
   , COUNT(DISTINCT lead_manager_code)
   , COUNT(DISTINCT senior_manager_code)
-  , COUNT(DISTINCT manger_code)
+  , COUNT(DISTINCT manager_code)
   , COUNT(DISTINCT employee_code)
 FROM EMPLOYEE
 LEFT JOIN COMPANY ON COMPANY.company_code = EMPLOYEE.company_code
 GROUP BY company_code, founder
 ORDER BY company_code ASC;
-
 
 -- founder name
 -- total lead managers
